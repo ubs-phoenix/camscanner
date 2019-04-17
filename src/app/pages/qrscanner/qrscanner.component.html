@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <zxing-scanner [formats]="allowedFormats"
+      [scannerEnabled]="true"
+    [autofocusEnabled]="true"
+    (camerasFound)="camerasFoundHandler($event)"
+    (scanSuccess)="scanSuccessHandler($event)"
+    (scanError)="scanErrorHandler($event)"
+    (scanFailure)="scanFailureHandler($event)"
+    (scanComplete)="scanCompleteHandler($event)"
+      ></zxing-scanner>
+    </div>
+  </div>
+</div>
